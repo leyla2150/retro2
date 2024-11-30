@@ -1,4 +1,3 @@
-
 # Программа "Битва"
 
 from abc import ABC, abstractmethod
@@ -71,7 +70,7 @@ def game():
     # Боец выбирает оружие
     for i, weapon in enumerate(weapons):
         print(f"{i + 1} - {weapon.__class__.__name__}")
-    weapon_choice = int(input("Выбери оружие (1 или 2): "))
+    weapon_choice = int(input("Выберите оружие (1 или 2): "))
     fighter.change_weapon(weapons[weapon_choice - 1])
 
     # Бой
@@ -89,3 +88,5 @@ def game():
 # Запуск игры
 if __name__ == "__main__":
     game()
+
+
